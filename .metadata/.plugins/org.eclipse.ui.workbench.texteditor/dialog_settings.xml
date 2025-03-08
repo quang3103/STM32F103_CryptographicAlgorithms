@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="true"/>
+	<list key="searchhistory">
+		<item value="ComputedCiphertext"/>
+		<item value="CMOX_AESSMALL_ECB_ENC_ALGO"/>
+		<item value="CMOX_AESFAST_ECB_ENC_ALGO"/>
+		<item value="Computed_Plaintext"/>
+		<item value="Computed_Ciphertext"/>
+		<item value="Expected_Ciphertext"/>
+		<item value="16"/>
+		<item value="cipher_ctx"/>
+		<item value="char"/>
+		<item value="msg"/>
+		<item value="HAL_GPIO_WritePin"/>
+		<item value="Drbg_Ctx"/>
+		<item value="97"/>
+		<item value="drgb_ctx"/>
+		<item value="osDelay"/>
+	</list>
+	<list key="replacehistory">
+		<item value="LENGTH_OF_SEED_KEY"/>
+	</list>
+</section>

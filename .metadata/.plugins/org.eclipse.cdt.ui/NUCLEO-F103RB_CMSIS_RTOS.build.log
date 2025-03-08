@@ -1,0 +1,37 @@
+23:24:51 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_CMSIS_RTOS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:321:41: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  321 |                                   (void)sprintf(msg1, " | carry return appears at index: %d\n\r", idx);
+      |                                         ^~~~~~~
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include <string.h>
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:321:41: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  321 |                                   (void)sprintf(msg1, " | carry return appears at index: %d\n\r", idx);
+      |                                         ^~~~~~~
+../Core/Src/main.c:321:41: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:325:41: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  325 |                                   (void)sprintf(msg1, " | endline appears at index: %d\n\r", idx);
+      |                                         ^~~~~~~
+../Core/Src/main.c:325:41: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'StartTask02':
+../Core/Src/main.c:352:14: warning: unused variable 'msg1' [-Wunused-variable]
+  352 |         char msg1[] = "Hello, world\n";
+      |              ^~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_CMSIS_RTOS.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\workspace\NUCLEO-F103RB_CMSIS_RTOS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_CMSIS_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_CMSIS_RTOS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_CMSIS_RTOS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_CMSIS_RTOS.elf  > "NUCLEO-F103RB_CMSIS_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  24620	    112	   8688	  33420	   828c	NUCLEO-F103RB_CMSIS_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_CMSIS_RTOS.list
+ 
+
+23:24:53 Build Finished. 0 errors, 4 warnings. (took 1s.351ms)
+

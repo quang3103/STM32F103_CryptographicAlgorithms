@@ -1,0 +1,10 @@
+23:11:47 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_Blinky ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_Blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5680	     12	   1644	   7336	   1ca8	NUCLEO-F103RB_Blinky.elf
+Finished building: default.size.stdout
+ 
+
+23:11:47 Build Finished. 0 errors, 0 warnings. (took 311ms)
+
