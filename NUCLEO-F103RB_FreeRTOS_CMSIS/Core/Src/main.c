@@ -46,8 +46,6 @@ typedef struct {   // object data type
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-CRC_HandleTypeDef hcrc;
-
 UART_HandleTypeDef huart2;
 
 /* Definitions for serialTask */
@@ -94,7 +92,6 @@ const osSemaphoreAttr_t sendKeyBinarySem_attributes = {
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
-static void MX_CRC_Init(void);
 void SerialTask(void *argument);
 void RequestSeedTask(void *argument);
 void CompareKeyTask(void *argument);
@@ -108,7 +105,7 @@ void HandleInputKey(char* inputKey, uint8_t len);
 char inputMsg[40];
 char requestSeed[] = "seed";
 char sendKey[] = "key";
-//const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key80df00ca058aba5ea509bfa73d00f167";
+//const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
 const uint8_t SecretKey[] =
 {
   0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0x00, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF
@@ -185,8 +182,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
-  MX_CRC_Init();
   /* USER CODE BEGIN 2 */
+
+  HAL_UART_Transmit(&huart2, (uint8_t*)"Starttttttttttt", (uint16_t)15, 100);
+
   cmox_init_arg_t init_target = {CMOX_INIT_TARGET_AUTO, NULL};
 
   /* Initialize cryptographic library */
@@ -195,7 +194,6 @@ int main(void)
     Error_Handler();
   }
 
-  //HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -301,32 +299,6 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief CRC Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_CRC_Init(void)
-{
-
-  /* USER CODE BEGIN CRC_Init 0 */
-
-  /* USER CODE END CRC_Init 0 */
-
-  /* USER CODE BEGIN CRC_Init 1 */
-
-  /* USER CODE END CRC_Init 1 */
-  hcrc.Instance = CRC;
-  if (HAL_CRC_Init(&hcrc) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN CRC_Init 2 */
-
-  /* USER CODE END CRC_Init 2 */
-
-}
-
-/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -406,14 +378,14 @@ static void MX_GPIO_Init(void)
 void HandleInputKey(char* inputKey, uint8_t len) {
 	uint8_t i = 0;
 	uint8_t convertedValue;
-	char hex[2];
+	char hex[3];
+	hex[2] = '\0'; // add null character...
 
 	memset(InputCiphertext, 0, sizeof(uint8_t)*LENGTH_OF_SEED_KEY);
 
 	for (i=0; i<len; i+=2) {
-		hex[0] = inputKey[i];
-		hex[1] = inputKey[i+1];
-		convertedValue = (uint8_t)strtol(hex, NULL, 16);
+		(void)strncpy(hex, &inputKey[i], 2);
+		convertedValue = (uint8_t)strtoul(hex, NULL, 16);
 		InputCiphertext[i/2] = convertedValue;
 	}
 }
@@ -460,18 +432,11 @@ void SerialTask(void *argument)
 	  }
 	  //handle for output
 	  if (osMessageQueueGet(outputQueueHandle, &msg, 0U, 0U) == osOK) {
-		  if (msg.service == 1) {
-			  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-		  }
-		  else {
-			  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-		  }
 		  HAL_UART_Transmit(&huart2, (uint8_t*)msg.buf, (uint16_t)strlen(msg.buf), 100);
 		  HAL_UART_Transmit(&huart2, (uint8_t*)"\n", 1, 100);
 	  }
 	  else {
-		  //HAL_UART_Transmit(&huart2, (uint8_t*)"Qimt\n", 5, 100);
-		  //osDelay(500);
+
 	  }
   }
   /* USER CODE END 5 */
@@ -544,10 +509,10 @@ void RequestSeedTask(void *argument)
 		  }
 
 		  for (i=0; i<LENGTH_OF_SEED_KEY-1; i++) {
-			  //if (Computed_Random[i] < 16) Computed_Random[i] += 16; //sprintf will add trailing null character ...
 			  (void)sprintf(&(msg.buf[2*i]), "%02X", ComputedRandom[i]);
 		  }
 		  osMessageQueuePut(outputQueueHandle, &msg, 0U, 0U);
+		  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 	  }
 	}
   /* USER CODE END RequestSeedTask */
@@ -566,16 +531,9 @@ void CompareKeyTask(void *argument)
 
   cmox_cipher_retval_t retval;
   size_t computedSize;
-  /* General cipher context */
-  //cmox_cipher_handle_t *cipher_ctx;
-  /* Index for piecemeal processing */
-  //uint32_t index;
 
   MsgQueue_Obj_t msg;
   msg.service = 2;
-  MsgQueue_Obj_t msg1;
-  msg.service = 2;
-  uint8_t i;
 
   /* Infinite loop */
   for(;;)
@@ -590,7 +548,7 @@ void CompareKeyTask(void *argument)
 	  if (osSemaphoreAcquire(sendKeyBinarySemHandle, osWaitForever) == osOK) {
 		  memset(ComputedCiphertext, 0, sizeof(uint8_t)*LENGTH_OF_SEED_KEY);
 		  ComputedRandom[15] = 0x01; //perform PKCS7 padding
-		  retval = cmox_cipher_encrypt(CMOX_AESSMALL_ECB_ENC_ALGO,                  			/* Use AES ECB algorithm */
+		  retval = cmox_cipher_encrypt(CMOX_AES_CBC_ENC_ALGO,                  			/* Use AES ECB algorithm */
 				  	  	  	  	  	   ComputedRandom, LENGTH_OF_SEED_KEY,           	/* Plaintext to encrypt */
 									   SecretKey, LENGTH_OF_SEED_KEY,                   /* AES key to use */
 									   IV, LENGTH_OF_SEED_KEY,                         	/* Initialization vector */
@@ -610,20 +568,15 @@ void CompareKeyTask(void *argument)
 
 		  /* Verify generated data are the expected ones */
 		  if (memcmp(InputCiphertext, ComputedCiphertext, computedSize) != 0) {
-			  //(void)sprintf(msg.buf, "Please don't hack me bro\n");
+			  (void)sprintf(msg.buf, "Please don't hack me bro");
+			  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 		  }
 		  else {
-			  //(void)sprintf(msg.buf, "We are good to go bro\n");
+			  (void)sprintf(msg.buf, "We are good to go bro");
+			  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 		  }
-		  //osMessageQueuePut(outputQueueHandle, &msg, 0U, 0U);
 
-		  for (i=0; i<LENGTH_OF_SEED_KEY; i++) {
-			  //if (Computed_Ciphertext[i] < 16) Computed_Ciphertext[i] += 16; //sprintf will add trailing null character ...
-			  (void)sprintf(&(msg.buf[2*i]), "%02X", InputCiphertext[i]);
-			  (void)sprintf(&(msg1.buf[2*i]), "%02X", ComputedCiphertext[i]);
-		  }
 		  osMessageQueuePut(outputQueueHandle, &msg, 0U, 0U);
-		  osMessageQueuePut(outputQueueHandle, &msg1, 0U, 0U);
 	  }
   }
   /* USER CODE END CompareKeyTask */

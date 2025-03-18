@@ -867,3 +867,734 @@ arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf
   37052	    188	  14504	  51744	   ca20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
 Finished building: default.size.stdout
  
+22:29:14 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37052	    188	  14504	  51744	   ca20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:32:13 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37052	    188	  14504	  51744	   ca20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:32:17 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37052	    188	  14504	  51744	   ca20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:33:37 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:33:41 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:36:09 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37216	    188	  14504	  51908	   cac4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:37:27 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37216	    188	  14504	  51908	   cac4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:39:23 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:39:44 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:40:46 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:41:30 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:42:51 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:44:40 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:45:18 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37236	    188	  14504	  51928	   cad8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:47:18 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37236	    188	  14504	  51928	   cad8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:47:23 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37236	    188	  14504	  51928	   cad8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+15:18:49 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37236	    188	  14504	  51928	   cad8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+15:20:21 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37244	    188	  14504	  51936	   cae0	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+15:23:02 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37208	    188	  14504	  51900	   cabc	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+15:23:52 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37208	    188	  14504	  51900	   cabc	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+15:34:33 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+15:43:09 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+15:43:58 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+16:13:00 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37184	    188	  14504	  51876	   caa4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+22:30:11 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37200	    188	  14504	  51892	   cab4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:34:41 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37216	    188	  14504	  51908	   cac4	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+22:49:00 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37268	    188	  14504	  51960	   caf8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:07:49 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37284	    188	  14504	  51976	   cb08	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:10:47 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37284	    188	  14504	  51976	   cb08	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:13:24 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37284	    188	  14504	  51976	   cb08	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:14:30 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37284	    188	  14504	  51976	   cb08	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:15:39 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37268	    188	  14504	  51960	   caf8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:15:54 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37268	    188	  14504	  51960	   caf8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+21:21:29 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37376	    188	  14504	  52068	   cb64	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:22:45 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37380	    188	  14504	  52072	   cb68	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:23:42 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37380	    188	  14504	  52072	   cb68	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:30:39 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37308	    188	  14504	  52000	   cb20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:31:23 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37308	    188	  14504	  52000	   cb20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+21:36:52 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37308	    188	  14504	  52000	   cb20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:38:28 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: passing argument 1 of 'HandleInputKey' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                  ^~~~~~~~~~~
+../Core/Src/main.c:103:27: note: expected 'char *' but argument is of type 'const char *'
+  103 | void HandleInputKey(char* inputKey, uint8_t len);
+      |                     ~~~~~~^~~~~~~~
+../Core/Src/main.c:201:47: warning: 'strlen' argument missing terminating nul [-Wstringop-overread]
+  201 |   HandleInputKey(&testKey[3], (uint8_t)strlen(&testKey[3]));
+      |                                               ^~~~~~~~~~~
+../Core/Src/main.c:111:12: note: referenced argument declared here
+  111 | const char testKey[LENGTH_OF_SEED_KEY*2+3] = "key77384fd183cb1916e7ac4c0fe022efcf";
+      |            ^~~~~~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37308	    188	  14504	  52000	   cb20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:41:27 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37252	    188	  14504	  51944	   cae8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:44:31 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'CompareKeyTask':
+../Core/Src/main.c:567:11: warning: unused variable 'i' [-Wunused-variable]
+  567 |   uint8_t i;
+      |           ^
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37220	    188	  14504	  51912	   cac8	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:48:03 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/cmox_low_level.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/cmox_low_level.d" -MT"Core/Src/cmox_low_level.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/cmox_low_level.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_timebase_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_timebase_tim.d" -MT"Core/Src/stm32f1xx_hal_timebase_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_timebase_tim.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/main.c: In function 'CompareKeyTask':
+../Core/Src/main.c:537:11: warning: unused variable 'i' [-Wunused-variable]
+  537 |   uint8_t i;
+      |           ^
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37060	    188	  14496	  51744	   ca20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:48:46 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_FreeRTOS_CMSIS.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_FreeRTOS_CMSIS\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_FreeRTOS_CMSIS.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_FreeRTOS_CMSIS.elf  > "NUCLEO-F103RB_FreeRTOS_CMSIS.list"
+   text	   data	    bss	    dec	    hex	filename
+  37060	    188	  14496	  51744	   ca20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_FreeRTOS_CMSIS.list
+ 
+21:49:04 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_FreeRTOS_CMSIS ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_FreeRTOS_CMSIS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37060	    188	  14496	  51744	   ca20	NUCLEO-F103RB_FreeRTOS_CMSIS.elf
+Finished building: default.size.stdout
+ 
