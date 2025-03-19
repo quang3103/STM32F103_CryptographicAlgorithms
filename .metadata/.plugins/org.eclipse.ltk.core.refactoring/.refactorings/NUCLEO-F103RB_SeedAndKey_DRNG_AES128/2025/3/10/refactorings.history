@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;NUCLEO-F103RB_FreeRTOS_CMSIS/Core/Src/cmox_low_level_template.c&apos; to &apos;cmox_low_level.c&apos;" description="Rename resource &apos;cmox_low_level_template.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/cmox_low_level_template.c" name="cmox_low_level.c" stamp="1741367501442" updateReferences="true"/>
+</session>

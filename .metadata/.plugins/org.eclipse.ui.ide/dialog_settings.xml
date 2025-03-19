@@ -16,6 +16,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128"/>
 			<item value="D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Projects\NUCLEO-L476RG\Applications\DRBG\RandomGeneration\STM32CubeIDE"/>
 			<item value="C:\Users\MSI-Modern\Downloads\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Applications\Cipher\AES_CBC_EncryptDecrypt"/>
 			<item value="D:\STM32\en.x-cube-cryptolib-v4-4-0\STM32CubeExpansion_Crypto_V4.4.0\Projects\NUCLEO-L476RG\Applications\Cipher\AES_CBC_EncryptDecrypt\STM32CubeIDE"/>
@@ -28,5 +29,13 @@
 			<item key="DIALOG_HEIGHT" value="726"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="BUILD_NOW" value="true"/>
+		<item key="BUILD_ALL" value="true"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="662"/>
+		<item key="DIALOG_HEIGHT" value="529"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
