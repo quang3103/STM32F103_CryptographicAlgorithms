@@ -1728,3 +1728,460 @@ arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
   37060	    188	  14496	  51744	   ca20	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
 Finished building: default.size.stdout
  
+22:15:28 **** Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'CompareKeyTask':
+../Core/Src/main.c:568:44: error: request for member 'buf' in something not a structure or union
+  568 |                           (void)sprintf(msg.buf, "Please don't hack me bro");
+      |                                            ^
+../Core/Src/main.c:572:44: error: request for member 'buf' in something not a structure or union
+  572 |                           (void)sprintf(msg.buf, "We are good to go bro");
+      |                                            ^
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:15:50 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  14496	  51728	   ca10	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:16:04 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  14496	  51728	   ca10	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+22:17:51 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  14496	  51728	   ca10	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:19:27 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  14496	  51728	   ca10	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:21:38 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.18.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf section `.bss' will not fit in region `RAM'
+C:/ST/STM32CubeIDE_1.18.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: region `RAM' overflowed by 6016 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:23:13 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.18.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf section `.bss' will not fit in region `RAM'
+C:/ST/STM32CubeIDE_1.18.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: region `RAM' overflowed by 6016 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:25:42 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.18.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf section `._user_heap_stack' will not fit in region `RAM'
+C:/ST/STM32CubeIDE_1.18.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: region `RAM' overflowed by 1016 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:26:35 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  16304	  53536	   d120	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:26:39 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  16304	  53536	   d120	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+22:28:03 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  36784	    188	  16304	  53276	   d01c	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:28:06 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36784	    188	  16304	  53276	   d01c	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+22:33:04 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'SerialTask':
+../Core/Src/main.c:407:14: warning: unused variable 'msg' [-Wunused-variable]
+  407 |         char msg[33];
+      |              ^~~
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  36784	    188	  16304	  53276	   d01c	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:33:59 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  16304	  53536	   d120	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:34:31 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  16304	  53536	   d120	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:35:59 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  16304	  53536	   d120	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:36:20 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  16304	  53536	   d120	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+22:36:50 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37044	    188	  16304	  53536	   d120	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:49:18 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'SerialTask':
+../Core/Src/main.c:441:32: error: stray '\' in program
+  441 |                   ITM_SendChar(\n);
+      |                                ^
+../Core/Src/main.c:441:33: error: 'n' undeclared (first use in this function)
+  441 |                   ITM_SendChar(\n);
+      |                                 ^
+../Core/Src/main.c:441:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:49:29 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37300	    188	  16304	  53792	   d220	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:49:32 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37300	    188	  16304	  53792	   d220	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+22:49:48 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37300	    188	  16304	  53792	   d220	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+22:50:39 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37300	    188	  16304	  53792	   d220	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+22:52:26 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37300	    188	  16304	  53792	   d220	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:53:36 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37300	    188	  16304	  53792	   d220	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:54:18 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37140	    188	  16304	  53632	   d180	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:54:48 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37140	    188	  16304	  53632	   d180	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:55:40 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37140	    188	  16304	  53632	   d180	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+22:56:22 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37140	    188	  16304	  53632	   d180	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+23:02:21 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37140	    188	  16304	  53632	   d180	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+23:04:48 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37332	    188	  16304	  53824	   d240	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+23:05:51 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37332	    188	  16304	  53824	   d240	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+23:17:41 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37332	    188	  16304	  53824	   d240	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+23:17:46 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37332	    188	  16304	  53824	   d240	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+23:18:22 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Middlewares/ST/STM32_Cryptographic/include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf" @"objects.list"  -lSTM32Cryptographic_CM0_CM0PLUS -mcpu=cortex-m3 -T"D:\STM32\STM32F103_CryptographicAlgorithms\NUCLEO-F103RB_SeedAndKey_DRNG_AES128\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEO-F103RB_SeedAndKey_DRNG_AES128.map" -Wl,--gc-sections -static -L"D:\STM32\STM_Firmware_Lib\STM32CubeExpansion_Crypto_V4.4.0\Middlewares\ST\STM32_Cryptographic\lib" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+ 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+arm-none-eabi-objdump -h -S NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf  > "NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list"
+   text	   data	    bss	    dec	    hex	filename
+  37332	    188	  16304	  53824	   d240	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 
+Finished building: NUCLEO-F103RB_SeedAndKey_DRNG_AES128.list
+ 
+23:18:39 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37332	    188	  16304	  53824	   d240	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+Finished building: default.size.stdout
+ 

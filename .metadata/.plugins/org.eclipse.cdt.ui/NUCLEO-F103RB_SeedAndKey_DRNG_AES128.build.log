@@ -1,10 +1,10 @@
-21:38:18 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
+23:18:39 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_SeedAndKey_DRNG_AES128 ****
 make -j8 all 
 arm-none-eabi-size  NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf 
    text	   data	    bss	    dec	    hex	filename
-  37060	    188	  14496	  51744	   ca20	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
+  37332	    188	  16304	  53824	   d240	NUCLEO-F103RB_SeedAndKey_DRNG_AES128.elf
 Finished building: default.size.stdout
  
 
-21:38:18 Build Finished. 0 errors, 0 warnings. (took 353ms)
+23:18:40 Build Finished. 0 errors, 0 warnings. (took 313ms)
 

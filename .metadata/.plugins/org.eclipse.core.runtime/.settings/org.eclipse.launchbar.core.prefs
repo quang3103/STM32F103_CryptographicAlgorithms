@@ -11,6 +11,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NUCLEO-F103RB_CMSIS_RTOS\ Debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NUCLEO-F103RB_FreeRTOS_CMSIS\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NUCLEO-F103RB_FreeRTOS_CMSIS/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NUCLEO-F103RB_FreeRTOS_CMSIS/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NUCLEO-F103RB_SeedAndKey_DRNG_AES128/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:NUCLEO-F103RB_SeedAndKey_DRNG_AES128/activeLaunchTarget=null\:---
 org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

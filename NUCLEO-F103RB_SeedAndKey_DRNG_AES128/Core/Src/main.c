@@ -29,10 +29,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-typedef struct {   // object data type
-	uint8_t service;
-	char buf[33];
-} MsgQueue_Obj_t;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -184,7 +181,7 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_UART_Transmit(&huart2, (uint8_t*)"Starttttttttttt", (uint16_t)15, 100);
+  HAL_UART_Transmit(&huart2, (uint8_t*)"Startttttttttt\n", (uint16_t)15, 100);
 
   cmox_init_arg_t init_target = {CMOX_INIT_TARGET_AUTO, NULL};
 
@@ -220,7 +217,7 @@ int main(void)
 
   /* Create the queue(s) */
   /* creation of outputQueue */
-  outputQueueHandle = osMessageQueueNew (2, sizeof(MsgQueue_Obj_t), &outputQueue_attributes);
+  outputQueueHandle = osMessageQueueNew (2, 33, &outputQueue_attributes);
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
@@ -404,7 +401,8 @@ void SerialTask(void *argument)
 	char c;
 	size_t idx = 0;
 	memset(inputMsg, 0, sizeof(char)*40); //reset buffer
-	MsgQueue_Obj_t msg;
+	char msg[33];
+	osStatus_t resultGetFromQ;
 
   /* Infinite loop */
   for(;;)
@@ -421,7 +419,7 @@ void SerialTask(void *argument)
 			  else {
 				  inputMsg[idx++] = '\n';
 				  inputMsg[idx] = '\r';
-				  HAL_UART_Transmit(&huart2, (uint8_t*)inputMsg, (uint16_t)strlen(inputMsg), 100);
+				  HAL_UART_Transmit(&huart2, (uint8_t*)inputMsg, (uint16_t)strlen(inputMsg), 10);
 			  }
 			  idx = 0; //reset idx
 			  memset(inputMsg, 0, sizeof(char)*40); //reset buffer
@@ -431,12 +429,16 @@ void SerialTask(void *argument)
 		  }
 	  }
 	  //handle for output
-	  if (osMessageQueueGet(outputQueueHandle, &msg, 0U, 0U) == osOK) {
-		  HAL_UART_Transmit(&huart2, (uint8_t*)msg.buf, (uint16_t)strlen(msg.buf), 100);
-		  HAL_UART_Transmit(&huart2, (uint8_t*)"\n", 1, 100);
-	  }
-	  else {
-
+	  if (osMessageQueueGetCount(outputQueueHandle) > 0)
+	  {
+		  resultGetFromQ = osMessageQueueGet(outputQueueHandle, &msg[0], NULL, 0);
+		  if (resultGetFromQ == osOK) {
+			  HAL_UART_Transmit(&huart2, (uint8_t*)&msg[0], (uint16_t)strlen(msg), 10);
+			  HAL_UART_Transmit(&huart2, (uint8_t*)"\n", 1, 10);
+		  } else {
+			  ITM_SendChar(resultGetFromQ+6+48);
+			  ITM_SendChar('\n');
+		  }
 	  }
   }
   /* USER CODE END 5 */
@@ -457,8 +459,7 @@ void RequestSeedTask(void *argument)
 	/* General DRBG context */
 	cmox_drbg_handle_t *drgb_ctx;
 	size_t i = 0;
-	MsgQueue_Obj_t msg;
-	msg.service = 1;
+	char msg[33];
 
 	/* Infinite loop */
 	for(;;)
@@ -509,9 +510,9 @@ void RequestSeedTask(void *argument)
 		  }
 
 		  for (i=0; i<LENGTH_OF_SEED_KEY-1; i++) {
-			  (void)sprintf(&(msg.buf[2*i]), "%02X", ComputedRandom[i]);
+			  (void)sprintf(&msg[2*i], "%02X", ComputedRandom[i]);
 		  }
-		  osMessageQueuePut(outputQueueHandle, &msg, 0U, 0U);
+		  (void)osMessageQueuePut(outputQueueHandle, &msg[0], 0, 0);
 		  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 	  }
 	}
@@ -531,9 +532,7 @@ void CompareKeyTask(void *argument)
 
   cmox_cipher_retval_t retval;
   size_t computedSize;
-
-  MsgQueue_Obj_t msg;
-  msg.service = 2;
+  char msg[33];
 
   /* Infinite loop */
   for(;;)
@@ -568,15 +567,15 @@ void CompareKeyTask(void *argument)
 
 		  /* Verify generated data are the expected ones */
 		  if (memcmp(InputCiphertext, ComputedCiphertext, computedSize) != 0) {
-			  (void)sprintf(msg.buf, "Please don't hack me bro");
+			  (void)sprintf(msg, "Please don't hack me bro");
 			  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 		  }
 		  else {
-			  (void)sprintf(msg.buf, "We are good to go bro");
+			  (void)sprintf(msg, "We are good to go bro");
 			  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 		  }
 
-		  osMessageQueuePut(outputQueueHandle, &msg, 0U, 0U);
+		  (void)osMessageQueuePut(outputQueueHandle, &msg[0], 0, 0);
 	  }
   }
   /* USER CODE END CompareKeyTask */
