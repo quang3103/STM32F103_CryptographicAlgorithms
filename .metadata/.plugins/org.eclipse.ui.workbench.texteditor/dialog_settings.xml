@@ -3,6 +3,8 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="_estack"/>
+		<item value="isr_vector"/>
 		<item value="HandleInputKey"/>
 		<item value="testKey"/>
 		<item value="HAL_GPIO_WritePin"/>
@@ -16,8 +18,6 @@
 		<item value="cipher_ctx"/>
 		<item value="char"/>
 		<item value="msg"/>
-		<item value="Drbg_Ctx"/>
-		<item value="97"/>
 	</list>
 	<list key="replacehistory">
 		<item value="LENGTH_OF_SEED_KEY"/>

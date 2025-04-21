@@ -1,0 +1,10 @@
+22:06:30 **** Incremental Build of configuration Debug for project NUCLEO-F103RB_Bootloader ****
+make -j8 all 
+arm-none-eabi-size  NUCLEO-F103RB_Bootloader.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9238	    116	   2104	  11458	   2cc2	NUCLEO-F103RB_Bootloader.elf
+Finished building: default.size.stdout
+ 
+
+22:06:30 Build Finished. 0 errors, 0 warnings. (took 279ms)
+
